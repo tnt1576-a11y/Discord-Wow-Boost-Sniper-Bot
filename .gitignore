@@ -1,0 +1,21 @@
+# This repository contains documentation and pictures only.
+*.exe
+*.zip
+*.py
+*.pyc
+*.ps1
+*.json
+*.jsonl
+*.sqlite*
+*.db
+*.bak
+*.log
+*.key
+*.pem
+.env*
+private/
+build/
+dist/
+.codex/
+.agents/
+.claude/
