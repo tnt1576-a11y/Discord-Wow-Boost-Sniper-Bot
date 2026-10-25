@@ -83,7 +83,7 @@ If a send's outcome is uncertain, review it in **Performance** before continuing
 
 Performance shows recorded per-attempt stages and percentile summaries. Unknown measurements remain unknown. The Gateway ping in the command bar is a separate measurement from detection and delivery time.
 
-The optional remote DM pause control lives under **Settings → Safety**. Configure its password and optional trusted-user IDs, then save that control. It accepts authorized one-to-one pause DMs for the active connection; it does not provide remote resume. This is a user-configured pause feature, separate from the removed release-server controls.
+The optional remote DM pause control lives under **Settings → Remote pause**. Configure its password and optional trusted-user IDs, then save that control. It accepts authorized one-to-one pause DMs for the active connection; it does not provide remote resume. This is a user-configured pause feature, separate from the removed release-server controls.
 
 ## Appearance, profiles and notifications
 
