@@ -4,11 +4,11 @@
 
 ## 1. Download and open
 
-Download **`discordwatcher-3.0.3-personal-offline.exe`** from the release assets. Use the EXE asset, rather than GitHub's automatically generated source archive: that archive contains this repository's documentation.
+Download **`discordwatcher-3.0.3-personal-offline.exe`** from the [latest release](https://github.com/tnt1576-a11y/wow-boost-sniper-personal/releases/latest).
 
-Place the EXE in its own writable folder on a **Windows x64** computer. It is a portable, Nuitka-compiled application; a separate Python installation is unnecessary. Keep one copy running at a time. Do not open an older copy while the current app is using the same setup.
+Place the EXE in its own writable folder on a **Windows x64** computer. It is a portable application; a separate Python installation is unnecessary. Keep one copy running at a time.
 
-The app opens directly. It does not contact a release server to check your version, register your device or obtain permission to run. “Offline” describes that standalone startup: Discord monitoring and message delivery still need an internet connection.
+An internet connection is required to monitor Discord and send messages.
 
 To compare the downloaded file with its release checksum in PowerShell:
 
@@ -22,7 +22,7 @@ Compare the result with the value in the release's `SHA256SUMS.txt` asset.
 
 Open **Settings → Account** and enter your own account configuration. Treat the Discord token like a password. Never send it in an issue, screenshot or support message.
 
-Use the app's proxy field if your connection requires one. **Detect system proxy** can populate the field; review the detected value before saving. A startup without version verification does not test whether your Discord connection or proxy works.
+Use the app's proxy field if your connection requires one. **Detect system proxy** can populate the field; review the detected value before saving.
 
 Save the settings. To bring in a setup you already own, use **Import existing configuration…** and select the file explicitly. The app does not search other installations or combine their configurations automatically.
 
@@ -36,7 +36,7 @@ Each source can have a fixed delay or an optional random delay range for automat
 
 Source overrides let you customize rules, role mappings, dungeon aliases and outgoing messages for a specific server or channel.
 
-![Sources with fictional IDs](docs/images/sources.png)
+![Watch sources and timing settings](docs/images/sources.png)
 
 ## 4. Save and test rules
 
@@ -73,7 +73,7 @@ Earlier-session history remains read-only. The app keeps up to 5,000 confirmed r
 
 Open **Compact** for a smaller monitor. Its latest card changes after a successful Take, and it shares the main window's action checks.
 
-![Take history with fictional data](docs/images/history.png)
+![Take history](docs/images/history.png)
 
 ## 7. Use Busy, Stop and delivery review
 
@@ -83,7 +83,7 @@ If a send's outcome is uncertain, review it in **Performance** before continuing
 
 Performance shows recorded per-attempt stages and percentile summaries. Unknown measurements remain unknown. The Gateway ping in the command bar is a separate measurement from detection and delivery time.
 
-The optional remote DM pause control lives under **Settings → Remote pause**. Configure its password and optional trusted-user IDs, then save that control. It accepts authorized one-to-one pause DMs for the active connection; it does not provide remote resume. This is a user-configured pause feature, separate from the removed release-server controls.
+The optional remote DM pause control lives under **Settings → Remote pause**. Configure its password and optional trusted-user IDs, then save that control. It accepts authorized one-to-one pause DMs for the active connection; it does not provide remote resume.
 
 ## Appearance, profiles and notifications
 
@@ -95,7 +95,7 @@ Settings also contains notification previews, Test sound, advertiser metadata, r
 
 ## Data, backups and manual updates
 
-By default, data is stored beside the EXE. A configuration directly beside the EXE takes precedence over an existing `data/wow_sniper_config.json`. With no existing config in either place, the EXE folder is used. Source or extraction folders are not searched for other installations.
+By default, data is stored beside the EXE. A configuration directly beside the EXE takes precedence over an existing `data/wow_sniper_config.json`. With no existing config in either place, the EXE folder is used.
 
 To choose a separate local folder:
 
@@ -114,9 +114,9 @@ Important local files include:
 | `detection_log.jsonl` | Detection details; may contain private source content. |
 | `private/upgrade-backups/` | Verified upgrade backups; may contain credentials. |
 
-For an update, stop and close the app, back up its full data directory, then download the new EXE manually. Keep the configuration and data in the intended folder. There is no automatic download or updater handoff in this edition.
+For an update, stop and close the app, back up its full data directory, then download the new EXE. Keep the configuration and data in the intended folder.
 
-Backups and data files are not release assets. Never commit or upload them.
+Keep your configuration and backups private: they may contain your account token and private channel content.
 
 ## Troubleshooting
 

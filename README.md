@@ -9,7 +9,6 @@
 <p align="center">
   <img alt="Version 3.0.3" src="https://img.shields.io/badge/version-3.0.3-cf3348">
   <img alt="Windows x64" src="https://img.shields.io/badge/platform-Windows%20x64-277bcc">
-  <img alt="Compiled with Nuitka" src="https://img.shields.io/badge/build-Nuitka-7755aa">
 </p>
 
 <p align="center">
@@ -18,15 +17,13 @@
   <a href="GUIDE.md"><strong>Getting started</strong></a>
 </p>
 
-![Live workspace with fictional boost listings, details and activity](docs/images/live.png)
+![Live workspace with boost listings, details and activity](docs/images/live.png)
 
 ## Your boosts, in one place
 
-Watch selected Discord channels and categories, filter bookings with your own rules, and keep the details close at hand. The native Qt interface brings live opportunities, delivery history, source configuration and performance review into six workspaces.
+Watch selected Discord channels and categories, filter bookings with your own rules, and keep the details close at hand. The desktop interface brings live opportunities, delivery history, source configuration and performance review into six workspaces.
 
-This is the **standalone personal edition**: it opens directly into the app, with **no online version verification, automatic updater, device registration or remote kill switch**. Discord monitoring still requires an internet connection and your own account configuration.
-
-The Windows download is a **protected Nuitka onefile build**. Python is not required. This repository contains the release documentation and screenshots; application source code is not included.
+Run it as a portable Windows application, with no separate Python installation required. Configure your account, choose your watch sources and start with Shadow mode to explore how your rules match incoming bookings. Discord monitoring requires an internet connection.
 
 ## Choose how you work
 
@@ -58,7 +55,7 @@ Build your filters, then decide where and when they apply.
 
 | Rules | Sources |
 | --- | --- |
-| ![Rules workspace with editable booking filters](docs/images/rules.png) | ![Sources workspace with fictional channels and categories](docs/images/sources.png) |
+| ![Rules workspace with editable booking filters](docs/images/rules.png) | ![Sources workspace with channels and categories](docs/images/sources.png) |
 
 ### History and performance
 
@@ -66,7 +63,7 @@ See what was sent and examine the recorded timing stages.
 
 | Takes / History | Performance |
 | --- | --- |
-| ![Confirmed delivery history using fictional records](docs/images/history.png) | ![Performance workspace with synthetic timing samples](docs/images/performance.png) |
+| ![Confirmed delivery history](docs/images/history.png) | ![Performance workspace with attempt timings](docs/images/performance.png) |
 
 ### Make it yours
 
@@ -74,13 +71,11 @@ See what was sent and examine the recorded timing stages.
 | --- | --- |
 | ![Live workspace in Purple Arcane](docs/images/purple-arcane.png) | ![Live workspace in Minimal Light](docs/images/minimal-light.png) |
 
-All screenshots use **fictional bookings, names, IDs and timing samples**. They illustrate the interface; they are not measurements of live Discord performance.
-
 ### Compact monitor
 
 Keep the latest successful Take close by in a smaller window.
 
-<img src="docs/images/compact.png" alt="Compact monitor with a fictional booking" width="360">
+<img src="docs/images/compact.png" alt="Compact monitor showing the latest Take" width="360">
 
 ## Start in a few minutes
 
@@ -94,9 +89,9 @@ The [usage guide](GUIDE.md) covers setup, modes, data, backups and troubleshooti
 
 ## Local data and updates
 
-Your configuration and history stay in the app's selected local data directory. The default is the folder beside the EXE; an existing `data` subfolder with a configuration can also be used. An explicit `--data-dir` selects a different folder. Existing configurations receive a verified local upgrade backup before the first v3 save.
+Your configuration and history stay in the app's selected local data directory. The default is the folder beside the EXE; an existing `data` subfolder with a configuration can also be used. An explicit `--data-dir` selects a different folder.
 
-There is no built-in updater or remote release approval. For a future update, close the app, back up your data, and download the new executable manually from GitHub Releases. Never upload your config, delivery journal, databases or private backups to GitHub.
+To update, close the app, back up your data, and download the new executable from [GitHub Releases](https://github.com/tnt1576-a11y/wow-boost-sniper-personal/releases/latest). Keep your account configuration and backups private.
 
 ## Account notice
 
